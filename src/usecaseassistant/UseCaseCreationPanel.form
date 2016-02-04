@@ -204,6 +204,9 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JTextField" name="scenarioInputField">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="scenarioInputFieldKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="scenarioAddButton">
       <Properties>
@@ -218,6 +221,9 @@
         <Property name="text" type="java.lang.String" value="Submit"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="submitUCButtonMousePressed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -27,6 +27,13 @@ public class UseCaseObject extends UseCaseCreationPanel {
         setTrigger(getTriggerField());
         setScenario(getScenario());
     }
+    
+    private void checkData(){}
+    
+    private void submitPressed(){
+        addData();
+        checkData();
+    }
 
     public int getUCID() {
         return UCID;

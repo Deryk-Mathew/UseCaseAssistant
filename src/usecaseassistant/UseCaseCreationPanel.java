@@ -5,6 +5,7 @@
  */
 package usecaseassistant;
 
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 
@@ -77,6 +78,12 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
 
         jScrollPane1.setViewportView(jList1);
 
+        scenarioInputField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                scenarioInputFieldKeyReleased(evt);
+            }
+        });
+
         scenarioAddButton.setText("Add");
         scenarioAddButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -86,6 +93,11 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
 
         submitUCButton.setText("Submit");
         submitUCButton.setToolTipText("");
+        submitUCButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                submitUCButtonMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -174,16 +186,31 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         TitleField.getAccessibleContext().setAccessibleDescription("UCTitleField");
     }// </editor-fold>//GEN-END:initComponents
 
-    ArrayList<String> scenario = new ArrayList();
-
     private void scenarioAddButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_scenarioAddButtonMousePressed
         DefaultListModel dlm = new DefaultListModel();
         String temp = scenarioInputField.getText();
+        scenarioInputField.setText("");
         dlm.addElement(temp);
         scenario.add(temp);
         jList1.setModel(dlm);
         System.out.println(scenario);
     }//GEN-LAST:event_scenarioAddButtonMousePressed
+
+    private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitUCButtonMousePressed
+
+    private void scenarioInputFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scenarioInputFieldKeyReleased
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            DefaultListModel dlm = new DefaultListModel();
+            String temp = scenarioInputField.getText();
+            scenarioInputField.setText("");
+            dlm.addElement(temp);
+            scenario.add(temp);
+            jList1.setModel(dlm);
+            System.out.println(scenario);
+        }
+    }//GEN-LAST:event_scenarioInputFieldKeyReleased
 
     public String getTitleField() {
         return TitleField.getText();
@@ -213,6 +240,8 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         return triggerField.getText();
     }
 
+    ArrayList<String> scenario = new ArrayList();
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField TitleField;
     private javax.swing.JTextField descField;

@@ -19,7 +19,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="submitUCButton" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -34,21 +34,19 @@
                       </Group>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField8" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jTextField7" max="32767" attributes="0"/>
-                              <Component id="jTextField6" max="32767" attributes="0"/>
-                              <Component id="jTextField5" max="32767" attributes="0"/>
-                              <Component id="jTextField4" max="32767" attributes="0"/>
-                              <Component id="jTextField3" max="32767" attributes="0"/>
-                              <Component id="jTextField2" max="32767" attributes="0"/>
-                              <Component id="jTextField1" max="32767" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="scenarioInputField" max="32767" attributes="0"/>
+                          <Component id="triggerField" max="32767" attributes="0"/>
+                          <Component id="postField" max="32767" attributes="0"/>
+                          <Component id="preconField" max="32767" attributes="0"/>
+                          <Component id="secActorField" max="32767" attributes="0"/>
+                          <Component id="priActorField" max="32767" attributes="0"/>
+                          <Component id="descField" max="32767" attributes="0"/>
+                          <Component id="TitleField" max="32767" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="scenarioAddButton" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -66,37 +64,37 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TitleField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="descField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="priActorField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="secActorField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="preconField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="postField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="triggerField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -105,11 +103,11 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField8" min="-2" max="-2" attributes="0"/>
+                  <Component id="scenarioAddButton" min="-2" max="-2" attributes="0"/>
+                  <Component id="scenarioInputField" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <Component id="submitUCButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="49" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -131,45 +129,34 @@
         <Property name="text" type="java.lang.String" value="Use Case Title:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField1"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="TitleField">
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="UCTitleField"/>
+        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="UCTitleField"/>
+      </AccessibilityProperties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="text" type="java.lang.String" value="Use Case Description:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField2"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="descField">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Primary Actor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField3"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="priActorField">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Secondary Actor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField4"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="secActorField">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField5"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="preconField">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
@@ -181,9 +168,11 @@
         <Property name="text" type="java.lang.String" value="Post-Conditions:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="postField">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField6"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="&quot;&quot;" type="code"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
@@ -191,10 +180,7 @@
         <Property name="text" type="java.lang.String" value="Trigger:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField7"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="triggerField">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
@@ -217,23 +203,27 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField8"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton1"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="scenarioInputField">
       <Events>
-        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MousePressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="scenarioInputFieldKeyReleased"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="scenarioAddButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jButton2"/>
+        <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="scenarioAddButtonMousePressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="submitUCButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Submit"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="submitUCButtonMousePressed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
