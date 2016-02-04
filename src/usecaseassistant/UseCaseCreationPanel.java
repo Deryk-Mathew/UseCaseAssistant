@@ -5,7 +5,6 @@
  */
 package usecaseassistant;
 
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 
@@ -197,7 +196,7 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_scenarioAddButtonMousePressed
 
     private void scenarioInputFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scenarioInputFieldKeyReleased
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
             DefaultListModel dlm = new DefaultListModel();
             String temp = scenarioInputField.getText();
             scenarioInputField.setText("");
