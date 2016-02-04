@@ -196,10 +196,6 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         System.out.println(scenario);
     }//GEN-LAST:event_scenarioAddButtonMousePressed
 
-    private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_submitUCButtonMousePressed
-
     private void scenarioInputFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scenarioInputFieldKeyReleased
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             DefaultListModel dlm = new DefaultListModel();
@@ -211,6 +207,10 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
             System.out.println(scenario);
         }
     }//GEN-LAST:event_scenarioInputFieldKeyReleased
+
+    private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitUCButtonMousePressed
 
     public String getTitleField() {
         return TitleField.getText();
