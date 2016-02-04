@@ -33,19 +33,19 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        TitleField = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        descField = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        priActorField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        secActorField = new javax.swing.JTextField();
+        preconField = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        postField = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        triggerField = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
@@ -59,31 +59,19 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Use Case Title:");
 
-        jTextField1.setText("jTextField1");
-
         jLabel4.setText("Use Case Description:");
-
-        jTextField2.setText("jTextField2");
 
         jLabel5.setText("Primary Actor:");
 
-        jTextField3.setText("jTextField3");
-
         jLabel6.setText("Secondary Actor:");
-
-        jTextField4.setText("jTextField4");
-
-        jTextField5.setText("jTextField5");
 
         jLabel7.setText("Preconditions:");
 
         jLabel8.setText("Post-Conditions:");
 
-        jTextField6.setText("jTextField6");
+        postField.setText("");
 
         jLabel9.setText("Trigger:");
-
-        jTextField7.setText("jTextField7");
 
         jLabel10.setText("Main Success Scenario:");
 
@@ -122,16 +110,15 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextField8)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField7)
-                                .addComponent(jTextField6)
-                                .addComponent(jTextField5)
-                                .addComponent(jTextField4)
-                                .addComponent(jTextField3)
-                                .addComponent(jTextField2)
-                                .addComponent(jTextField1)
-                                .addComponent(jLabel2)
-                                .addComponent(jScrollPane1)))
+                            .addComponent(triggerField)
+                            .addComponent(postField)
+                            .addComponent(preconField)
+                            .addComponent(secActorField)
+                            .addComponent(priActorField)
+                            .addComponent(descField)
+                            .addComponent(TitleField)
+                            .addComponent(jLabel2)
+                            .addComponent(jScrollPane1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -146,31 +133,31 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TitleField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(descField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(priActorField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(secActorField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(preconField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(postField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(triggerField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
@@ -183,11 +170,13 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
                 .addComponent(jButton2)
                 .addContainerGap(49, Short.MAX_VALUE))
         );
+
+        TitleField.getAccessibleContext().setAccessibleName("UCTitleField");
+        TitleField.getAccessibleContext().setAccessibleDescription("UCTitleField");
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
         DefaultListModel dlm = new DefaultListModel();
- 
         String temp = jTextField8.getText();
         dlm.addElement(temp);
         scenario.add(temp);
@@ -195,41 +184,107 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         System.out.println(scenario);
     }//GEN-LAST:event_jButton1MousePressed
 
+    public String getTitleField() {
+        return TitleField.getText();
+    }
+
+    public String getDescField() {
+        return descField.getText();
+    }
+
+    public String getPriActorField() {
+        return priActorField.getText();
+    }
+
+    public String getSecActorField() {
+        return secActorField.getText();
+    }
+
+    public String getPreconField() {
+        return preconField.getText();
+    }
+
+    public String getPostField() {
+        return postField.getText();
+    }
+
+    public String getTriggerField() {
+        return triggerField.getText();
+    }
+
     public int getUCID() {
         return UCID;
+    }
+
+    public void setUCID(int UCID) {
+        this.UCID = UCID;
     }
 
     public String getUCtitle() {
         return UCtitle;
     }
 
+    public void setUCtitle(String UCtitle) {
+        this.UCtitle = UCtitle;
+    }
+
     public String getUCdesc() {
         return UCdesc;
+    }
+
+    public void setUCdesc(String UCdesc) {
+        this.UCdesc = UCdesc;
     }
 
     public String getPriActor() {
         return priActor;
     }
 
+    public void setPriActor(String priActor) {
+        this.priActor = priActor;
+    }
+
     public String getSecActor() {
         return secActor;
+    }
+
+    public void setSecActor(String secActor) {
+        this.secActor = secActor;
     }
 
     public String getPrecon() {
         return precon;
     }
 
+    public void setPrecon(String precon) {
+        this.precon = precon;
+    }
+
     public String getPostcon() {
         return postcon;
+    }
+
+    public void setPostcon(String postcon) {
+        this.postcon = postcon;
     }
 
     public String getTrigger() {
         return trigger;
     }
 
+    public void setTrigger(String trigger) {
+        this.trigger = trigger;
+    }
+
     public ArrayList<String> getScenario() {
         return scenario;
     }
+
+    public void setScenario(ArrayList<String> scenario) {
+        this.scenario = scenario;
+    }
+    
+    
     
     private int UCID;
     private String UCtitle;
@@ -242,6 +297,8 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
     private ArrayList<String> scenario = new ArrayList();
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField TitleField;
+    private javax.swing.JTextField descField;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -256,13 +313,11 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList jList1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField postField;
+    private javax.swing.JTextField preconField;
+    private javax.swing.JTextField priActorField;
+    private javax.swing.JTextField secActorField;
+    private javax.swing.JTextField triggerField;
     // End of variables declaration//GEN-END:variables
 }
