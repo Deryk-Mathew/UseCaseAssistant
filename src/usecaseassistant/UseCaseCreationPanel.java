@@ -10,7 +10,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author Chickstor
+ * @author Deryk Mathew
  */
 public class UseCaseCreationPanel extends javax.swing.JPanel {
 
@@ -190,18 +190,10 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
  
         String temp = jTextField8.getText();
         dlm.addElement(temp);
-        list.add(temp);
+        scenario.add(temp);
         jList1.setModel(dlm);
-        System.out.println(list);
+        System.out.println(scenario);
     }//GEN-LAST:event_jButton1MousePressed
-
-    ArrayList list = new ArrayList();                        
-   
-    private int UCID;
-
-    public ArrayList getList() {
-        return list;
-    }
 
     public int getUCID() {
         return UCID;
@@ -235,9 +227,11 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         return trigger;
     }
 
-    public ArrayList getScenario() {
+    public ArrayList<String> getScenario() {
         return scenario;
     }
+    
+    private int UCID;
     private String UCtitle;
     private String UCdesc;
     private String priActor;
@@ -245,7 +239,7 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
     private String precon;
     private String postcon;
     private String trigger;
-    private ArrayList scenario = new ArrayList();
+    private ArrayList<String> scenario = new ArrayList();
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
