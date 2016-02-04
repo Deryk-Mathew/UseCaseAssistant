@@ -29,43 +29,43 @@ public class MainFormPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        editUCButton = new javax.swing.JButton();
+        newUCButton = new javax.swing.JButton();
+        deleteUCButton = new javax.swing.JButton();
+        ucLabelList = new javax.swing.JLabel();
+        sysNameLabel = new javax.swing.JLabel();
+        sysName = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
+        UCList = new javax.swing.JList();
 
-        jButton2.setText("Edit UC");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        editUCButton.setText("Edit UC");
+        editUCButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                editUCButtonActionPerformed(evt);
             }
         });
 
-        jButton1.setText("New UC");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        newUCButton.setText("New UC");
+        newUCButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton1MousePressed(evt);
+                newUCButtonMousePressed(evt);
             }
         });
 
-        jButton3.setText("Delete UC");
+        deleteUCButton.setText("Delete UC");
 
-        jLabel1.setText("Use Cases:");
+        ucLabelList.setText("Use Cases:");
 
-        jLabel2.setText("System Name:");
+        sysNameLabel.setText("System Name:");
 
-        jLabel3.setText("Placeholder");
+        sysName.setText("Placeholder");
 
-        jList1.setModel(new javax.swing.AbstractListModel() {
+        UCList.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(UCList);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -75,17 +75,17 @@ public class MainFormPanel extends javax.swing.JPanel {
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(sysNameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel3))
+                        .addComponent(sysName))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(jLabel1))
+                            .addComponent(deleteUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(editUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(newUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(ucLabelList))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -93,53 +93,53 @@ public class MainFormPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                    .addComponent(sysNameLabel)
+                    .addComponent(sysName))
                 .addGap(36, 36, 36)
-                .addComponent(jLabel1)
+                .addComponent(ucLabelList)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jButton1)
+                        .addComponent(newUCButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2)
+                        .addComponent(editUCButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3)))
+                        .addComponent(deleteUCButton)))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void editUCButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editUCButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_editUCButtonActionPerformed
 
-    private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
+    private void newUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newUCButtonMousePressed
         createAndShowGUI();
-    }//GEN-LAST:event_jButton1MousePressed
+    }//GEN-LAST:event_newUCButtonMousePressed
 
-        private static void createAndShowGUI() {
+    private static void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("Add New Use Case");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        UseCaseCreationPanel ucp = new UseCaseCreationPanel();
-        frame.getContentPane().add(ucp);
-        
+        UseCaseObject uco = new UseCaseObject();
+        frame.getContentPane().add(uco);
+
         //Display the window.
         frame.pack();
         frame.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JList jList1;
+    private javax.swing.JList UCList;
+    private javax.swing.JButton deleteUCButton;
+    private javax.swing.JButton editUCButton;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton newUCButton;
+    private javax.swing.JLabel sysName;
+    private javax.swing.JLabel sysNameLabel;
+    private javax.swing.JLabel ucLabelList;
     // End of variables declaration//GEN-END:variables
 }
