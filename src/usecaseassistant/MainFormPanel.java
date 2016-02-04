@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Chickstor
+ * @author Deryk Mathew
  */
 public class MainFormPanel extends javax.swing.JPanel {
 
