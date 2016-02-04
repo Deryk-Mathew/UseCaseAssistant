@@ -191,14 +191,61 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
         String temp = jTextField8.getText();
         dlm.addElement(temp);
         list.add(temp);
-        /*
-        for(Object elem : list)
-            System.out.println(elem+"  ");*/
         jList1.setModel(dlm);
+        System.out.println(list);
     }//GEN-LAST:event_jButton1MousePressed
 
     ArrayList list = new ArrayList();                        
+   
+    private int UCID;
 
+    public ArrayList getList() {
+        return list;
+    }
+
+    public int getUCID() {
+        return UCID;
+    }
+
+    public String getUCtitle() {
+        return UCtitle;
+    }
+
+    public String getUCdesc() {
+        return UCdesc;
+    }
+
+    public String getPriActor() {
+        return priActor;
+    }
+
+    public String getSecActor() {
+        return secActor;
+    }
+
+    public String getPrecon() {
+        return precon;
+    }
+
+    public String getPostcon() {
+        return postcon;
+    }
+
+    public String getTrigger() {
+        return trigger;
+    }
+
+    public ArrayList getScenario() {
+        return scenario;
+    }
+    private String UCtitle;
+    private String UCdesc;
+    private String priActor;
+    private String secActor;
+    private String precon;
+    private String postcon;
+    private String trigger;
+    private ArrayList scenario = new ArrayList();
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
