@@ -92,11 +92,6 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
 
         submitUCButton.setText("Submit");
         submitUCButton.setToolTipText("");
-        submitUCButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                submitUCButtonMousePressed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -206,11 +201,11 @@ public class UseCaseCreationPanel extends javax.swing.JPanel {
             System.out.println(scenario);
         }
     }//GEN-LAST:event_scenarioInputFieldKeyReleased
-
-    private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
+    
+    public void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {                                            
         // TODO add your handling code here:
-    }//GEN-LAST:event_submitUCButtonMousePressed
-
+    }            
+    
     public String getTitleField() {
         return TitleField.getText();
     }
