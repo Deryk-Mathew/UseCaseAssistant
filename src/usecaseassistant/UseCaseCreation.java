@@ -5,8 +5,10 @@
  */
 package usecaseassistant;
 
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,9 +18,13 @@ public class UseCaseCreation extends javax.swing.JPanel {
 
     /**
      * Creates new form UseCaseCreationPanel
+     * @param id
      */
-    public UseCaseCreation() {
+    public UseCaseCreation(int id) {
         initComponents();
+        UCID = id;
+        String ucid = Integer.toString(id);
+        jLabel2.setText(ucid);
     }
 
     /**
@@ -187,28 +193,59 @@ public class UseCaseCreation extends javax.swing.JPanel {
 
     private void scenarioAddButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_scenarioAddButtonMousePressed
         DefaultListModel dlm = new DefaultListModel();
+        if(scenarioInputField.getText().isEmpty() == false){
         String temp = scenarioInputField.getText();
         scenarioInputField.setText("");
         dlm.addElement(temp);
         scenario.add(temp);
         jList1.setModel(dlm);
         System.out.println(scenario);
+        }else{
+           JOptionPane.showMessageDialog(null, "Please enter a scenario step!"); 
+        }
     }//GEN-LAST:event_scenarioAddButtonMousePressed
 
     private void scenarioInputFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scenarioInputFieldKeyReleased
+        DefaultListModel dlm = new DefaultListModel();
+        if(scenarioInputField.getText().isEmpty() == false){
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
-            DefaultListModel dlm = new DefaultListModel();
+            
             String temp = scenarioInputField.getText();
             scenarioInputField.setText("");
             dlm.addElement(temp);
             scenario.add(temp);
             jList1.setModel(dlm);
             System.out.println(scenario);
+        }}else{
+            JOptionPane.showMessageDialog(null, "Please enter a scenario step!");
         }
     }//GEN-LAST:event_scenarioInputFieldKeyReleased
 
     private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
-        // TODO add your handling code here:
+        if(TitleField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Title Field is Empty");
+        }
+        if(descField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Description Field is Empty");
+        }
+        if(priActorField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Primary Actor Field is Empty");
+        }
+        if(secActorField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Secondary Actor Field is Empty");
+        }
+        if(preconField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Precondition Field is Empty");
+        }
+        if(postField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Post-Condition Field is Empty");
+        }
+        if(triggerField.getText().isEmpty() == true){
+            JOptionPane.showMessageDialog(null, "Trigger Field is Empty");
+        }
+        if(scenario.isEmpty()== true){
+            JOptionPane.showMessageDialog(null, "You have not entered scenario steps");
+        }
     }//GEN-LAST:event_submitUCButtonMousePressed
 
     public int getUCID() {

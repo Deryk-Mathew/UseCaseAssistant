@@ -16,9 +16,12 @@ public class UseCaseAssistant extends javax.swing.JPanel {
 
     /**
      * Creates new form MainFormPanel
+     * @param name
      */
-    public UseCaseAssistant() {
+    public UseCaseAssistant(String name) {
         initComponents();
+        systemName = name;
+        sysName.setText(systemName);
     }
 
     /**
@@ -38,6 +41,7 @@ public class UseCaseAssistant extends javax.swing.JPanel {
         sysName = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         UCList = new javax.swing.JList();
+        jButton1 = new javax.swing.JButton();
 
         editUCButton.setText("Edit UC");
         editUCButton.addActionListener(new java.awt.event.ActionListener() {
@@ -59,14 +63,9 @@ public class UseCaseAssistant extends javax.swing.JPanel {
 
         sysNameLabel.setText("System Name:");
 
-        sysName.setText("Placeholder");
-
-        UCList.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(UCList);
+
+        jButton1.setText("Save System");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -79,15 +78,17 @@ public class UseCaseAssistant extends javax.swing.JPanel {
                         .addComponent(sysNameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(sysName))
+                    .addComponent(ucLabelList)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(deleteUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(editUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(newUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(ucLabelList))
-                .addContainerGap(45, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(deleteUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(editUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(newUCButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,7 +109,9 @@ public class UseCaseAssistant extends javax.swing.JPanel {
                         .addComponent(editUCButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(deleteUCButton)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -122,10 +125,11 @@ public class UseCaseAssistant extends javax.swing.JPanel {
 
     private void createAndShowGUI() {
         //Create and set up the window.
+        ucID++;
         JFrame frame = new JFrame("Add New Use Case");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        UseCaseCreation ucc = new UseCaseCreation();
+        UseCaseCreation ucc = new UseCaseCreation(ucID);
         ucl.add(ucc);
         frame.getContentPane().add(ucc);
 
@@ -134,11 +138,14 @@ public class UseCaseAssistant extends javax.swing.JPanel {
         frame.setVisible(true);
     }
 
-    private ArrayList<Object> ucl = new ArrayList();
+    private int ucID;
+    private String systemName;
+    private ArrayList<UseCaseCreation> ucl = new ArrayList();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList UCList;
     private javax.swing.JButton deleteUCButton;
     private javax.swing.JButton editUCButton;
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton newUCButton;
     private javax.swing.JLabel sysName;

@@ -23,8 +23,8 @@ public class UseCaseAssistantMainClass {
         JFrame frame = new JFrame("Use Case Assistant");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        UseCaseAssistant mfp = new UseCaseAssistant();
-        frame.getContentPane().add(mfp);
+        NewSystemCreation nsc = new NewSystemCreation();
+        frame.getContentPane().add(nsc);
         
         //Display the window.
         frame.pack();
