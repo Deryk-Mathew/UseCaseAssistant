@@ -224,24 +224,38 @@ public class UseCaseCreation extends javax.swing.JPanel {
     private void submitUCButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitUCButtonMousePressed
         if(TitleField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Title Field is Empty");
+        }else{
+            UCtitle = TitleField.getText();
         }
         if(descField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Description Field is Empty");
+        }else{
+            UCdesc = descField.getText();
         }
         if(priActorField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Primary Actor Field is Empty");
+        }else{
+            priActor = priActorField.getText();
         }
         if(secActorField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Secondary Actor Field is Empty");
+        }else{
+            secActor = secActorField.getText();
         }
         if(preconField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Precondition Field is Empty");
+        }else{
+            precon = preconField.getText();
         }
         if(postField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Post-Condition Field is Empty");
+        }else{
+            postcon = postField.getText();
         }
         if(triggerField.getText().isEmpty() == true){
             JOptionPane.showMessageDialog(null, "Trigger Field is Empty");
+        }else{
+            trigger = triggerField.getText();
         }
         if(scenario.isEmpty()== true){
             JOptionPane.showMessageDialog(null, "You have not entered scenario steps");
